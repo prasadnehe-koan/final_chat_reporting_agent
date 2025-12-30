@@ -80,11 +80,14 @@ st.markdown(f"""
         border: none !important;
         border-radius: 10px !important;
         padding: 2.5rem 1.5rem !important;
-        min-height: 250px !important;
+        min-height: 200px !important;
         height: auto !important;
         transition: all 0.3s ease !important;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1) !important;
         width: 100% !important;
+        font-size: 1.3rem !important;
+        font-weight: 600 !important;
+        line-height: 1.5 !important;
     }}
 
     /* Hover effect */
@@ -107,42 +110,18 @@ st.markdown(f"""
     button[kind="primary"] > div,
     div[data-testid="column"] button > div {{
         display: flex !important;
-        flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
-        gap: 1rem !important;
-        padding: 0 !important;
-    }}
-
-    /* All paragraph elements inside button */
-    button p {{
-        margin: 0 !important;
-        padding: 0 !important;
-        width: 100% !important;
         text-align: center !important;
     }}
 
-    /* First line - LARGE EMOJI ICON */
-    button p:first-of-type {{
-        font-size: 5rem !important;
-        line-height: 1 !important;
-        margin-bottom: 1rem !important;
-    }}
-
-    /* Second line - Title */
-    button p:nth-of-type(2) {{
-        font-size: 1.4rem !important;
-        font-weight: 700 !important;
-        line-height: 1.2 !important;
-        margin-bottom: 0.5rem !important;
-    }}
-
-    /* Third line - Description */
-    button p:nth-of-type(3) {{
-        font-size: 1rem !important;
-        opacity: 0.9 !important;
-        line-height: 1.3 !important;
-        font-weight: 400 !important;
+    /* Button text */
+    button p {{
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 1.3rem !important;
+        font-weight: 600 !important;
+        line-height: 1.5 !important;
     }}
 
 </style>
@@ -164,11 +143,11 @@ st.markdown("## Select a Tool")
 col1, col2 = st.columns(2)
 
 with col1:
-    if st.button("📊\n\nReport Generator\n\nAI-powered business reports", key="nav_report", use_container_width=True):
+    if st.button("Report Generator", key="nav_report", use_container_width=True):
         st.switch_page("pages/1_Report_Generator.py")
 
 with col2:
-    if st.button("💬\n\nAI Chatbot\n\nChat with AI about your business data", key="nav_chat", use_container_width=True):
+    if st.button("AI Chatbot", key="nav_chat", use_container_width=True):
         st.switch_page("pages/2_Chatbot.py")
 
 # ==========================================================
