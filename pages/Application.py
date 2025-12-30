@@ -62,86 +62,87 @@ st.markdown(f"""
         margin: 0.25rem 0 0 0;
     }}
     
+    /* Select a Tool heading - centered */
+    div[data-testid="stMarkdownContainer"] h2 {{
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        color: #1f2937;
+    }}
+    
     /* Style the buttons to look like nav cards */
-    button[kind="secondary"], button[kind="primary"], button[data-baseweb="button"] {{
+    button[kind="secondary"], 
+    button[kind="primary"], 
+    div[data-testid="column"] button {{
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
         color: white !important;
         border: none !important;
         border-radius: 10px !important;
-        padding: 2rem !important;
-        height: 220px !important;
+        padding: 2.5rem 1.5rem !important;
+        min-height: 250px !important;
+        height: auto !important;
         transition: all 0.3s ease !important;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1) !important;
-        white-space: pre-line !important;
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: center !important;
-        align-items: center !important;
+        width: 100% !important;
     }}
 
-    /* Hover */
+    /* Hover effect */
     button[kind="secondary"]:hover,
     button[kind="primary"]:hover,
-    button[data-baseweb="button"]:hover {{
+    div[data-testid="column"] button:hover {{
         transform: translateY(-5px) !important;
         box-shadow: 0 8px 12px rgba(102,126,234,0.4) !important;
     }}
 
-    /* Pressed */
+    /* Pressed effect */
     button[kind="secondary"]:active,
     button[kind="primary"]:active,
-    button[data-baseweb="button"]:active {{
+    div[data-testid="column"] button:active {{
         transform: translateY(-2px) !important;
     }}
 
-    /* Button container and text */
-    button[kind="secondary"] div,
-    button[kind="primary"] div,
-    button[data-baseweb="button"] div {{
+    /* Button inner container */
+    button[kind="secondary"] > div,
+    button[kind="primary"] > div,
+    div[data-testid="column"] button > div {{
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
-        text-align: center !important;
+        gap: 1rem !important;
+        padding: 0 !important;
+    }}
+
+    /* All paragraph elements inside button */
+    button p {{
+        margin: 0 !important;
+        padding: 0 !important;
         width: 100% !important;
+        text-align: center !important;
     }}
 
-    /* Emoji icon size - much larger */
-    button[kind="secondary"] div p:first-child,
-    button[kind="primary"] div p:first-child,
-    button[data-baseweb="button"] div p:first-child {{
-        font-size: 4.5rem !important;
+    /* First line - LARGE EMOJI ICON */
+    button p:first-of-type {{
+        font-size: 5rem !important;
         line-height: 1 !important;
-        margin: 0 0 1rem 0 !important;
+        margin-bottom: 1rem !important;
     }}
 
-    /* Title text */
-    button[kind="secondary"] div p:nth-child(2),
-    button[kind="primary"] div p:nth-child(2),
-    button[data-baseweb="button"] div p:nth-child(2) {{
-        font-size: 1.3rem !important;
+    /* Second line - Title */
+    button p:nth-of-type(2) {{
+        font-size: 1.4rem !important;
         font-weight: 700 !important;
-        line-height: 1.3 !important;
-        margin: 0.5rem 0 !important;
+        line-height: 1.2 !important;
+        margin-bottom: 0.5rem !important;
     }}
 
-    /* Description text */
-    button[kind="secondary"] div p:last-child,
-    button[kind="primary"] div p:last-child,
-    button[data-baseweb="button"] div p:last-child {{
-        font-size: 0.95rem !important;
+    /* Third line - Description */
+    button p:nth-of-type(3) {{
+        font-size: 1rem !important;
         opacity: 0.9 !important;
-        line-height: 1.4 !important;
-        margin: 0.3rem 0 0 0 !important;
-    }}
-
-    /* Select a Tool heading */
-    .stMarkdown h2 {{
-        text-align: center;
-        font-size: 1.8rem;
-        font-weight: 600;
-        margin-bottom: 1.5rem;
-        color: #1f2937;
+        line-height: 1.3 !important;
+        font-weight: 400 !important;
     }}
 
 </style>
