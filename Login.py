@@ -11,7 +11,7 @@ from auth import (
 # PAGE CONFIG
 # ==========================================================
 st.set_page_config(
-    page_title="Login - AI Business Assistant",
+    page_title="Login - AI Procurement Assistant",
     page_icon="🔐",
     layout="centered",
     initial_sidebar_state="collapsed"
