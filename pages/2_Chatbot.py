@@ -17,7 +17,7 @@ user_id, username = require_authentication()
 # PAGE CONFIG
 # ==========================================================
 st.set_page_config(
-    page_title="AI Chatbot",
+    page_title="Chat with AI about your procurement data",
     page_icon="💬",
     layout="wide",
     initial_sidebar_state="expanded"
