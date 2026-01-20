@@ -683,7 +683,7 @@ st.markdown(f"""
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 1.25rem 1.5rem; border-radius: 10px; margin-bottom: 1.25rem; display: flex; justify-content: space-between; align-items: center;">
     <div style="flex: 1;">
         <h1 style="color: white; font-size: 1.5rem; font-weight: 700; margin: 0;">💬 {current_chat['title']}</h1>
-        <p style="color: rgba(255,255,255,0.95); font-size: 0.875rem; margin: 0.25rem 0 0 0;">Ask questions about your business data</p>
+        <p style="color: rgba(255,255,255,0.95); font-size: 0.875rem; margin: 0.25rem 0 0 0;">Chat with AI about your procurement data</p>
     </div>
     <img src="{LOGO_URL}" class="header-logo" alt="Koantek Logo" onerror="this.style.display='none'">
 </div>
