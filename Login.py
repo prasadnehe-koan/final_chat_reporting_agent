@@ -144,7 +144,7 @@ LOGO_URL = "https://media.licdn.com/dms/image/v2/C4E0BAQGtXskL4EvJmA/company-log
 st.markdown(f"""
 <div class="login-header">
     <img src="{LOGO_URL}" class="login-logo" alt="Logo" onerror="this.style.display='none'">
-    <div class="login-title">🔐 AI Business Assistant</div>
+    <div class="login-title">🔐 AI Procurement Assistant</div>
     <div class="login-subtitle">Sign in to access your workspace</div>
 </div>
 """, unsafe_allow_html=True)
