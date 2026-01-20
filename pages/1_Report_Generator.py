@@ -30,7 +30,7 @@ CHATBOT_ENDPOINT=st.secrets.get('CHATBOT_ENDPOINT')
 # PAGE CONFIG
 # ==========================================================
 st.set_page_config(
-    page_title="AI Report Generator",
+    page_title="AI-powered procurement reports",
     page_icon="📊",
     layout="wide",
     initial_sidebar_state="collapsed"
