@@ -509,7 +509,7 @@ LOGO_URL = "https://media.licdn.com/dms/image/v2/C4E0BAQGtXskL4EvJmA/company-log
 st.markdown(f"""
 <div class="main-header">
     <div class="header-content">
-        <h1>📊 AI Report Generator</h1>
+        <h1>📊 AI-powered procurement reports</h1>
         <p>Generate comprehensive business reports with AI</p>
     </div>
     <img src="{LOGO_URL}" class="header-logo" alt="Koantek Logo" onerror="this.style.display='none'">
