@@ -143,11 +143,11 @@ st.markdown("## Select a Tool")
 col1, col2 = st.columns(2)
 
 with col1:
-    if st.button("Report Generator", key="nav_report", use_container_width=True):
+    if st.button("AI-powered procurement reports", key="nav_report", use_container_width=True):
         st.switch_page("pages/1_Report_Generator.py")
 
 with col2:
-    if st.button("AI Chatbot", key="nav_chat", use_container_width=True):
+    if st.button("Chat with AI about your procurement data", key="nav_chat", use_container_width=True):
         st.switch_page("pages/2_Chatbot.py")
 
 # ==========================================================
