@@ -128,7 +128,7 @@ st.markdown(f"""
 
 <div class="main-header">
     <div class="header-content">
-        <h1>🧠 AI Business Assistant</h1>
+        <h1>🧠AI Procurement Assistant</h1>
         <p>Choose your tool below</p>
     </div>
     <img src="{LOGO_URL}" class="header-logo" alt="Koantek Logo" onerror="this.style.display='none'">
@@ -167,7 +167,7 @@ st.markdown("""
 # # PAGE CONFIG
 # # ==========================================================
 # st.set_page_config(
-#     page_title="AI Business Assistant",
+#     page_title="AI Procurement Assistant",
 #     page_icon="📊",
 #     layout="wide",
 #     initial_sidebar_state="collapsed"
@@ -325,7 +325,7 @@ st.markdown("""
 
 # <div class="main-header">
 #     <div class="header-content">
-#         <h1>📊 AI Business Assistant</h1>
+#         <h1>📊 AI Procurement Assistant</h1>
 #         <p>Choose your tool below</p>
 #     </div>
 #     <img src="{LOGO_URL}" class="header-logo" alt="Koantek Logo" onerror="this.style.display='none'">
